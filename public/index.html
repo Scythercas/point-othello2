@@ -1,0 +1,33 @@
+<html>
+<head>
+  <meta charset="UTF-8"/>
+  <!-- https://developer.mozilla.org/ja/docs/Web/HTTP/CSP -->
+  <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self'"/>
+  <title>オセロ</title>
+  <link rel="stylesheet" href="./style.css">
+  <script src="./main.js"></script>
+</head>
+
+<body>
+  <article>
+    <div id="playField">
+    </div>
+    <div id="sidebar">
+      <br>
+      <button id="restart">最初から</button>
+      <br><br>
+      <button id="skip">一手飛ばす</button>
+      <br><br>
+      <button id="finish">勝利判定へ</button>
+      <br>
+    </div>
+  </article>
+
+  <div id="result">
+    <span id="redDisp"></span><br>
+    <span id="greenDisp"></span><br>
+    <span id="finalResult"></span><br>
+  </div>
+
+</body>
+</html>
